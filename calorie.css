@@ -1,0 +1,33 @@
+body {background-color: #bdcebe}
+
+#title { text-align: center;
+ font-size: 50px ;
+  background-color: #f7cac9 ;
+   font-style: italic ;
+    font-family: Noto sans ;
+      font-weight: 300;
+  }
+  #left {
+  	background-color: grey
+  }
+  #b1 {
+  background-color: #DAA520; 
+  border-radius: 20px;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.ip1 {
+	 border: 2px solid #DAA520;
+	 border-radius: 20px; 
+}
+
+
+
+

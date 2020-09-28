@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>calorie calculator</title>
+	<link rel="stylesheet" href="calorie.css">
+	<script src="calorie.js"></script>
+	
+</head>
+<body>
+	<p id="title">calorie calculator</p>
+	<div id="left">
+		<div id="info">
+			<p>BMI calculator</p>
+			<label for="gender">your gender</label>
+			<input type="text" name="your gender" id="gender" placeholder="  male or female" class="ip1">
+			<br> <br>
+			<label for="name">your name</label>
+			<input type="text" name="your name" id="name" placeholder="  your name..." class="ip1">
+			<br> <br>
+			<label for="age">your age</label>
+			<input type="text" name="your age" id="age" placeholder="  from 2 to 120" class="ip1">
+			<br> <br>
+			<label for="weight">your weight</label>
+			<input type="text" name="your weight" id="weight" placeholder="  kg" class="ip1">
+			<br>
+			<label for="height">your height</label>
+			<input type="text" name="your height" id="height" placeholder="  cm" class="ip1">
+			<button id="b1">save</button>
+		</div>
+		<div id="message">
+			
+		</div>
+		
+	</div>
+<script src="https://code.jquery.com/jquery-2.2.4.js">
+	
+
+	$(document).ready(function(){
+	  var gender = $('#gender').val();
+	  var name = $('#name').val();
+	  var age = Number($('#age').val());
+	  var weight = changeCtD($('#weight').val());
+	  var height = changeCtD($('#height').val());
+      var msg= messageBmi(name,gender,age,height,weight);
+      $('#b1').click(function(){
+      $('#message').text(msg);
+  })
+
+
+
+
+
+
+
+
+
+ 	})
+
+
+</script>
+
+
+</body>
+</html>
