@@ -4,61 +4,68 @@
 	<title>calorie calculator</title>
 	<link rel="stylesheet" href="calorie.css">
 	<script src="calorie.js"></script>
+	<meta charset="UTF-8">
+	
+
 	
 </head>
 <body>
-	<p id="title">calorie calculator</p>
-	<div id="left">
+	<p id="title"><marquee> 💪 Calorie and BMI calculator 💪</marquee></p>
+	<div><div id="calculator">
 		<div id="info">
-			<p>BMI calculator</p>
-			<label for="gender">your gender</label>
+			<p id="P1">Calculator</p>
+			<a href="https://en.wikipedia.org/wiki/Body_mass_index">what's BMI and why calculate calories ?</a><br><br>
+			<!-- <label for="gender" class="lab">your gender</label>
+			<select id="gender" class="ip1">
+				<option value="Male">male</option>
+                <option value="Female">female</option>
+			</select> -->
+			<label for="gender" class="lab">your gender</label>
 			<input type="text" name="your gender" id="gender" placeholder="  male or female" class="ip1">
 			<br> <br>
-			<label for="name">your name</label>
+			<label for="name" class="lab">your name</label>
 			<input type="text" name="your name" id="name" placeholder="  your name..." class="ip1">
 			<br> <br>
-			<label for="age">your age</label>
-			<input type="text" name="your age" id="age" placeholder="  from 2 to 120" class="ip1">
+			<label for="age" class="lab">your age</label>
+			<input type="number" name="your age" id="age" placeholder="  from 2 to 120" class="ip1">
 			<br> <br>
-			<label for="weight">your weight</label>
-			<input type="text" name="your weight" id="weight" placeholder="  kg" class="ip1">
+			<label for="weight" class="lab">your weight</label>
+			<input type="number" name="your weight" id="weight" placeholder="  kg" class="ip1">
+			<br><br>
+			<label for="height" class="lab">your height</label>
+			<input type="number" name="your height" id="height" placeholder="  cm" class="ip1">
 			<br>
-			<label for="height">your height</label>
-			<input type="text" name="your height" id="height" placeholder="  cm" class="ip1">
-			<button id="b1">save</button>
-		</div>
-		<div id="message">
-			
-		</div>
+			<button id="b1">save</button><button id="b2">clear</button>
+
+		</div></div>
 		
 	</div>
-<script src="https://code.jquery.com/jquery-2.2.4.js">
 	
-
-	$(document).ready(function(){
-	  var gender = $('#gender').val();
-	  var name = $('#name').val();
-	  var age = Number($('#age').val());
-	  var weight = changeCtD($('#weight').val());
-	  var height = changeCtD($('#height').val());
-      var msg= messageBmi(name,gender,age,height,weight);
-      $('#b1').click(function(){
-      $('#message').text(msg);
-  })
+		
 
 
 
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script>
 
+$(document).ready(function(){
+	$("button#b1").on("click", function(){ 
+   var name = $('#name').val();
+	var gender = $('#gender').val();
+	var age = $('#age').val();
+	var height = changeCtD($('#height').val());
+	var weight = changeCtD($('#weight').val());
+	var msg = messageBmi(name,gender,age,height,weight);
+	var $msg = $('<div id="msg"></div>');
+	var $body = $('body');
+    $msg.text(msg);
+    $msg.appendTo($body);
+});
+  $("button#b2").on("click", function(){
+  	location.reload();
+ });
 
-
-
-
-
- 	})
-
-
+});
 </script>
-
-
 </body>
 </html>

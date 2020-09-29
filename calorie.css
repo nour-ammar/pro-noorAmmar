@@ -1,18 +1,64 @@
-body {background-color: #bdcebe}
+body {background-image: url("https://cdn.hipwallpaper.com/i/62/95/NAa32U.jpg");
+background-size: cover;}
 
 #title { text-align: center;
+	color: white ; 
  font-size: 50px ;
-  background-color: #f7cac9 ;
+  /*background-color: #f7cac9 */;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  margin-right: 400px;
+  margin-left: 400px;
    font-style: italic ;
     font-family: Noto sans ;
       font-weight: 300;
+     
   }
-  #left {
-  	background-color: grey
+
+  #calculator {
+  	background-image: url('https://cdn.shopify.com/s/files/1/2690/5604/products/Slow_2048x.jpg?v=1561823911');
+  	margin-top: 5px;
+  margin-bottom: 100px;
+  margin-right: 900px;
+  margin-left: 100px;
+  text-align: center ;
+   padding-top: 30px;
+  padding-right: 90px;
+  padding-bottom: 30px;
+  padding-left: 90px;
+  border-radius: 100%;
+  float: right;
   }
+  /*#def {
+  	background-color: white ;
+  margin-top: 10px;
+  margin-bottom: 100px;
+  margin-right: 1000px;
+  margin-left: 10px;
+  text-align: center ;
+   padding-top: 50px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  border-radius: 100%;
+  	float: left;
+  }*/
   #b1 {
-  background-color: #DAA520; 
-  border-radius: 20px;
+  background-color: #86af49; 
+  border-radius: 100%;
+  color: white;
+  padding: 10px 22px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+#b2 {
+  background-color: #f7786b; 
+  border-radius: 100%;
   color: white;
   padding: 10px 22px;
   text-align: center;
@@ -24,10 +70,42 @@ body {background-color: #bdcebe}
   cursor: pointer;
 }
 .ip1 {
-	 border: 2px solid #DAA520;
+	 border: 2px solid black;
 	 border-radius: 20px; 
 }
+#msg {
+	background-color: #86af49 ;
+   margin-top: 600px;
+  margin-bottom: 30px;
+  margin-right: 400px;
+  margin-left: 10px;
+  /*text-align: center ;*/
+   padding-top: 10px;
+  padding-right: 20px;
+  padding-bottom: 50px;
+  padding-left: 20px;
+  border-radius: 20%;
+  font-family: Noto sans ;
+  font-weight: 300;
+  color: white;
+  font-size: 20px;
+  border-style: outset;
 
+  
+}
+.lab {
+	font-size: 20px;
+
+	/*font-family: Noto sans ;
+	font-style: italic ;*/
+}
+#P1 { font-size: 30px;
+	 /* font-family: Noto sans ;
+	  font-style: italic ;*/
+	  font-weight: bold;
+	  color :#50394c;
+
+}
 
 
 
